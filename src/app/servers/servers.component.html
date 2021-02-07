@@ -1,6 +1,7 @@
 <div class="container">
-  <p>servers list!</p>
-  <app-server></app-server>
-  <app-server></app-server>
+  <p>Servers list!</p>
+  <button class="btn btn-primary" [disabled]="!allowNewServer" (click)="onCreateServer()">Add Server</button>
+  <hr>
+  <label>{{serverStatus}}</label>
   <app-server></app-server>
 </div>
